@@ -4,6 +4,7 @@ using System.Data;
 string connectionString = "FileName=Demo.db";
 try
 {
+    var con = new Npgsql.NpgsqlConnection(connectionString);
     IDbConnection connection = (new Microsoft.Data.Sqlite.SqliteConnection(connectionString)) as IDbConnection;
     connection.Open();
     IDbCommand cmd = connection.CreateCommand();

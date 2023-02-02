@@ -19,13 +19,27 @@ ADO.NET is sometimes considered an evolution of ActiveX Data Objects (ADO) techn
 System.Data.OleDb (доступ до MSSQL через OLE)
 
 
-IDbConnection - Відповідає за зєднання (сесія)
 
-IDbCommand - команда для виконання (з результатом, без)
+
+
+#IDbConnection - Відповідає за зєднання (сесія)
+    "PostgresConnection": "Server=172.19.0.2;Port=5432;DataBase=Demo;Uid=postgres;Pwd=mysecretpassword",
+    "SqliteConnection": "FileName='C:\\DataBases\\Demo.db';Cache=Shared",
+    "MSSQLConnection": "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=Demo"
+
+	var connection = new Microsoft.Data.Sqlite.SqliteConnection("FileName=Demo.db"));
+	or
+	var connection = new Npgsql.NpgsqlConnection("Server=172.19.0.2;Port=5432;DataBase=Demo;Uid=postgres;Pwd=mysecretpassword")
+
+#IDbCommand - команда для виконання (з результатом, без)
+	
+
+
 IDataReader, IDataRecord; - обробка команди з результатом
 IDataParameter, IDbDataParameter - параметри до команд
+
+
 IDbTransaction - транзакції. 
 
 IDataAdapter,IDbDataAdapter - Allows an object to implement a DataAdapter, and represents a set of methods and mapping action-related properties that are used to fill and update a DataSet and update a data source.
-
 
