@@ -19,6 +19,8 @@ namespace WindowsFormsAdoNetDm
 
         private void StudentForm_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'dataSet1.StudentGroup' table. You can move, or remove it, as needed.
+            this.studentGroupTableAdapter.Fill(this.dataSet1.StudentGroup);
             // TODO: This line of code loads data into the 'dataSet1.Student' table. You can move, or remove it, as needed.
             this.studentTableAdapter.Fill(this.dataSet1.Student);
 
