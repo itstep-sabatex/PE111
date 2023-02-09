@@ -123,5 +123,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ADONET.Models\ADONET.Models.csproj">
+      <Project>{e4970cff-27ae-4d14-841e-7ae02635ed16}</Project>
+      <Name>ADONET.Models</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
