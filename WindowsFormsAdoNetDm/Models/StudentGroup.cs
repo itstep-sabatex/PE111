@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ADONET.Models
+namespace WindowsFormsAdoNetDm.Models
 {
     public class StudentGroup
     {
