@@ -66,7 +66,6 @@ namespace WindowsFormsAdoNetDm
             if (student != null)
             {
                 student.Name = "Updated name";
-                //dbContext.GetTable<Models.Student>(). DeleteOnSubmit(student);
                 dbContext.SubmitChanges();
             }
             var students = dbContext.GetTable<Models.Student>().OrderBy(o => o.Name).ToArray();
