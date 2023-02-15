@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ADONet", "ADONet\ADONet.csproj", "{1D02B62C-6424-4350-A8D5-7B57F948CBFE}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A19706AA-5718-4051-9422-B488F73FF272}"
 	ProjectSection(SolutionItems) = preProject
 		Readme.md = Readme.md
@@ -16,7 +14,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsAdoNetDm", "Win
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ADONET.Models", "ADONET.Models\ADONET.Models.csproj", "{E4970CFF-27AE-4D14-841E-7AE02635ED16}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ADONETWPFEF", "ADONETWPFEF\ADONETWPFEF.csproj", "{D658C5B9-8248-4D03-8010-44504CEBA081}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ADONETWPFEF", "ADONETWPFEF\ADONETWPFEF.csproj", "{D658C5B9-8248-4D03-8010-44504CEBA081}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EFCore", "EFCore", "{CE687BDE-0E6C-49B3-9080-AF9C56E944F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFCoreDemo", "EFCoreDemo\EFCoreDemo.csproj", "{69F36FD4-FFEB-4B94-8A90-5538F663CB6F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ADONet", "ADO.NET\ADONet\ADONet.csproj", "{EF6C3AEC-3229-4791-8233-AF6204740B2A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,10 +28,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{1D02B62C-6424-4350-A8D5-7B57F948CBFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1D02B62C-6424-4350-A8D5-7B57F948CBFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1D02B62C-6424-4350-A8D5-7B57F948CBFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1D02B62C-6424-4350-A8D5-7B57F948CBFE}.Release|Any CPU.Build.0 = Release|Any CPU
 		{22503D04-60A7-49C8-A330-E64782D5D8AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{22503D04-60A7-49C8-A330-E64782D5D8AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{22503D04-60A7-49C8-A330-E64782D5D8AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -44,9 +44,20 @@ Global
 		{D658C5B9-8248-4D03-8010-44504CEBA081}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D658C5B9-8248-4D03-8010-44504CEBA081}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D658C5B9-8248-4D03-8010-44504CEBA081}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69F36FD4-FFEB-4B94-8A90-5538F663CB6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69F36FD4-FFEB-4B94-8A90-5538F663CB6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69F36FD4-FFEB-4B94-8A90-5538F663CB6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69F36FD4-FFEB-4B94-8A90-5538F663CB6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF6C3AEC-3229-4791-8233-AF6204740B2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF6C3AEC-3229-4791-8233-AF6204740B2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF6C3AEC-3229-4791-8233-AF6204740B2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF6C3AEC-3229-4791-8233-AF6204740B2A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{69F36FD4-FFEB-4B94-8A90-5538F663CB6F} = {CE687BDE-0E6C-49B3-9080-AF9C56E944F0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E09808AB-58C3-422F-AB2A-1D10CC398705}
