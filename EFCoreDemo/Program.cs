@@ -1,7 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
 using EFCoreDemo.Data;
-using EFCoreDemo.Models;
+
 
 using (var context = new EFCoreDemoDbContext())
 {
