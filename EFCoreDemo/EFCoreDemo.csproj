@@ -22,4 +22,8 @@
     <ProjectReference Include="..\EFCoreDemo.Models\EFCoreDemo.Models.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Data\Migrations\" />
+  </ItemGroup>
+
 </Project>

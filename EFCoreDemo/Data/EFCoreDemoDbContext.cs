@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using EFCoreDemo.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,9 +11,15 @@ namespace EFCoreDemo.Data
     public class EFCoreDemoDbContext:DbContext
     {
         public DbSet<Models.Student>  Students { get; set; }
+        public DbSet<StudentGroup> StudentGroups { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlite("Data Source=C:\\Users\\serhi\\source\\repos\\itstep-sabatex\\ПВ111\\ADONet\\DataBases\\EFCoreDemo.db");
+        }
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            //modelBuilder.Entity<Student>().Ignore(b => b.Surname);
+            modelBuilder.Entity<Student>().Property(p=>p.Surname).HasColumnName("Прізвище"); 
         }
     }
 }
