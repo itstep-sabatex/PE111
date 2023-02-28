@@ -37,7 +37,7 @@ using (var context = new EFCoreDemoDbContext())
 
 
 
-    var groups = context.StudentGroups.Include(i=>i.Students).ToArray();
+    var groups = context.StudentGroups.Include(i=>i.Students).Where(s=>s.Name.StartsWith("Drt")).OrderBy(o=>o.Name).ToArray();
     foreach (var g in groups)
     {
         Console.WriteLine(g);

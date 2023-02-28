@@ -57,10 +57,7 @@ namespace ScoolJournal
                 var r = context.Users.Select(x => new { Id=x.Id,Name=x.Name}).ToList();
                 usersBox.ItemsSource = r;
             }
-            Enum.GetNames(typeof(UserLevel))
-                Enum.GetValues()
-
-            
+             
         }
 
         private void passwordB_KeyDown(object sender, KeyEventArgs e)
