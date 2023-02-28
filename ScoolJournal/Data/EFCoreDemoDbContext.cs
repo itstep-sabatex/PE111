@@ -6,11 +6,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EFCoreDemo.Data
+namespace ScoolJournal.Data
 {
     public class EFCoreDemoDbContext:DbContext
     {
-        public DbSet<Models.Student>  Students { get; set; }
+        public DbSet<Student>  Students { get; set; }
         public DbSet<StudentGroup> StudentGroups { get; set; }
         public DbSet<User>  Users { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

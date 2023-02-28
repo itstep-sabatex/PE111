@@ -1,0 +1,42 @@
+﻿<Window x:Class="ScoolJournal.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ScoolJournal"
+        mc:Ignorable="d"
+        Title="Login"  Width="800" Loaded="Window_Loaded" x:Name="userWindow">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+            <Label Margin="5">Login</Label>
+            <Label Margin="5" Grid.Row="1">Password</Label>
+            <ComboBox Grid.Column="1" Height="20" Margin="5" x:Name="usersBox" DisplayMemberPath="Name" SelectedValuePath="Id" SelectedValue="{Binding ElementName=userWindow, Path=UserId}"/>
+            <StackPanel Grid.Row="1" Grid.Column="1" Margin="5" VerticalAlignment="Center">
+                <PasswordBox Grid.Column="1" Margin="5" x:Name="passwordB" KeyDown="passwordB_KeyDown" GotFocus="passwordB_GotFocus"/>
+                <TextBlock x:Name="errorBlock" Visibility="Collapsed" Foreground="red"  TextAlignment="Center" >Пароль введено неправильно, спробуйте ще.</TextBlock>
+            </StackPanel>
+        </Grid>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button Click="Button_CheckPassword">Ok</Button>
+            <Button Grid.Column="1">Cancel</Button>
+        </Grid>
+        
+    </Grid>
+</Window>

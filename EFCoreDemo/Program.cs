@@ -6,6 +6,13 @@ using Microsoft.EntityFrameworkCore;
 
 using (var context = new EFCoreDemoDbContext())
 {
+    //context.Users.Add(new User { Name = "Peter Vranow", Password = "1111" });
+    //context.Users.Add(new User { Name = "Dana Samsonova", Password = "1111" });
+    //context.Users.Add(new User { Name = "Ivan Sviridov", Password = "1111" });
+    //context.Users.Add(new User { Name = "Stanislav Vernidub", Password = "1111" });
+    //context.SaveChanges();
+
+
     //var student = new Student { Name = "Ivan",Surname= "Ivanov" };
     //context.Students.Add(student);
     //context.Students.Add(new Student { Name = "Петро" ,Surname= "Петренко" });
@@ -27,7 +34,7 @@ using (var context = new EFCoreDemoDbContext())
     //    Console.WriteLine($"{st.Id}  {st.Name}  {st.StudentGroup?.Name ?? none}");
     //    //st.Name = st.Name + "$$$";
     //}
-  
+
 
 
     var groups = context.StudentGroups.Include(i=>i.Students).ToArray();
