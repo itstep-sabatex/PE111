@@ -17,6 +17,7 @@ namespace EFCoreDemo.Models
     public class Student
     {
         public int Id { get; set; }
+        [Display(Name="Ім'я",ShortName = "Sм'я",Description = "Ім'я")]
         public string Name { get; set; }
         //[NotMapped]
         //[Column("Прізвище")]

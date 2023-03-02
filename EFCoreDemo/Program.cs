@@ -35,18 +35,20 @@ using (var context = new EFCoreDemoDbContext())
     //    //st.Name = st.Name + "$$$";
     //}
 
-
+    var students = context.Students.Include(i=>i.StudentGroup);
 
     var groups = context.StudentGroups.Include(i=>i.Students).Where(s=>s.Name.StartsWith("Drt")).OrderBy(o=>o.Name).ToArray();
     foreach (var g in groups)
     {
         Console.WriteLine(g);
         foreach (var st in g.Students)
+        {
             Console.WriteLine(st);
-        //st.Name = st.Name + "$$$";
+            st.Name = st.Name + "$$$";
+        }
     }
 
-    //context.SaveChanges();
+    context.SaveChanges();
 
 }
 

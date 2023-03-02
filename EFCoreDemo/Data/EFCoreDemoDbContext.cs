@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace EFCoreDemo.Data
 {
-    public class EFCoreDemoDbContext:DbContext
+    public sealed class EFCoreDemoDbContext:DbContext
     {
         public static User DefaultAdmin = new User() {Id=1,Name="FGFFG FFFG" };
 
