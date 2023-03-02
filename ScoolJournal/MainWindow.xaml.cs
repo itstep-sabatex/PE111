@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EFCoreDemo.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,19 @@ namespace ScoolJournal
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void MenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            var studentWindow = new StudentListWindow();
+            studentWindow.Show();
+
+        }
+
+        private void MenuItem_Click_1(object sender, RoutedEventArgs e)
+        {
+            var studentGroup = new GroupListView();
+            studentGroup.Show();
         }
     }
 }
