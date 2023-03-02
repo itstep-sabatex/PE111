@@ -7,7 +7,15 @@
         mc:Ignorable="d"
         Title="GroupListView" Height="450" Width="800" Loaded="Window_Loaded">
     <Grid>
-        <DataGrid x:Name="dg">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal">
+            <Button>Add</Button>
+            <Button>Delete</Button>
+        </StackPanel>
+        <DataGrid x:Name="dg" Grid.Row="1">
             
         </DataGrid>   
     </Grid>
