@@ -16,7 +16,7 @@ namespace EFCoreDemo.Models
     //[Comment("Super student table")]
     public class Student
     {
-        public int Id { get; set; }
+        public int Idd { get; set; }
         [Display(Name="Ім'я",ShortName = "Sм'я",Description = "Ім'я")]
         public string Name { get; set; }
         //[NotMapped]

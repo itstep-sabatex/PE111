@@ -26,7 +26,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EFCoreDemoBaseExist", "EFCo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EFCoreDemo.Models", "EFCoreDemo.Models\EFCoreDemo.Models.csproj", "{805DFE57-D099-4C44-B80B-7C31BB9117BC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScoolJournal", "ScoolJournal\ScoolJournal.csproj", "{177F6547-A098-4534-9C90-EAA69FDF282D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ScoolJournal", "ScoolJournal\ScoolJournal.csproj", "{177F6547-A098-4534-9C90-EAA69FDF282D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DapperDemo", "DapperDemo\DapperDemo.csproj", "{2BAD4E43-AAD1-4242-923B-C79A99F43E87}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -70,6 +72,10 @@ Global
 		{177F6547-A098-4534-9C90-EAA69FDF282D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{177F6547-A098-4534-9C90-EAA69FDF282D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{177F6547-A098-4534-9C90-EAA69FDF282D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BAD4E43-AAD1-4242-923B-C79A99F43E87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BAD4E43-AAD1-4242-923B-C79A99F43E87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BAD4E43-AAD1-4242-923B-C79A99F43E87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BAD4E43-AAD1-4242-923B-C79A99F43E87}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -79,6 +85,7 @@ Global
 		{33E3F107-43AA-4D40-B7E7-0764345EC6C3} = {CE687BDE-0E6C-49B3-9080-AF9C56E944F0}
 		{805DFE57-D099-4C44-B80B-7C31BB9117BC} = {CE687BDE-0E6C-49B3-9080-AF9C56E944F0}
 		{177F6547-A098-4534-9C90-EAA69FDF282D} = {CE687BDE-0E6C-49B3-9080-AF9C56E944F0}
+		{2BAD4E43-AAD1-4242-923B-C79A99F43E87} = {CE687BDE-0E6C-49B3-9080-AF9C56E944F0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E09808AB-58C3-422F-AB2A-1D10CC398705}
