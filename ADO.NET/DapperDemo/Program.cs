@@ -3,6 +3,10 @@ using EFCoreDemo.Models;
 using Microsoft.Data.Sqlite;
 
 
+var a = 10;
+var b = 20;
+var c = a+b;
+
 // See https://aka.ms/new-console-template for more information
 Console.WriteLine("Hello, World!");
 
