@@ -1,10 +1,18 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
 
+using ThreadDemo;
+
 static void Method(object a)
 {
-    Console.WriteLine($"Method argument a={a}");
+    MatrixPar? param = a as MatrixPar;
+    if (param != null )
+    {
+        param.result = MultiplreOneElement(param.dim, param.i, param.j, param.a, param.b);
+    }
+
 }
+
 
 
 static double MultiplreOneElement(int dim, int i,int j,double[,] a, double[,] b)
@@ -15,13 +23,24 @@ static double MultiplreOneElement(int dim, int i,int j,double[,] a, double[,] b)
 
     for (int mi = 0; mi < dim; mi++)
     {
-        result =result * a[i,mi] * b[mi,j];
+        result =result + a[i,mi] * b[mi,j];
     }
     return result;
 }
 
-var tr = new Thread(Method);
-tr.Start(10);
+double[,] a = new double[10,10];
+double[,] b = new double[10,10];
+
+MatrixPar[,] threads = new MatrixPar[10,10];
+for (int i = 0; i < 10; i++)
+{
+    for (int j = 0; j < 10; j++)
+    {
+        threads[i,j] = new MatrixPar(10, i, j, a, b, new Thread(Method));
+        threads[i,j].thisThread.Start(threads[i,j]);
+    }
+}
+
 
 Console.WriteLine($"Main thread number =  {Thread.CurrentThread.ManagedThreadId}");
 var tr1 = new Thread(() =>
