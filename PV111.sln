@@ -50,9 +50,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MonitorDemo", "MonitorDemo\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MutexDemo", "MutexDemo\MutexDemo.csproj", "{02B4EC8A-F2EF-4F52-A6B4-9F1FA20EFBA3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SemaphoreDemo", "SemaphoreDemo\SemaphoreDemo.csproj", "{8BB68412-E418-4D6C-8FA6-6E5547D97097}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SemaphoreDemo", "SemaphoreDemo\SemaphoreDemo.csproj", "{8BB68412-E418-4D6C-8FA6-6E5547D97097}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadPoool", "ThreadPoool\ThreadPoool.csproj", "{3CB81FDC-324B-4082-B4BF-BB236400B6F3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ThreadPoool", "ThreadPoool\ThreadPoool.csproj", "{3CB81FDC-324B-4082-B4BF-BB236400B6F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimerThreadDemo", "TimerThreadDemo\TimerThreadDemo.csproj", "{18FB8D94-9D71-49F7-8405-3DA82EB307C8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -140,6 +142,10 @@ Global
 		{3CB81FDC-324B-4082-B4BF-BB236400B6F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3CB81FDC-324B-4082-B4BF-BB236400B6F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3CB81FDC-324B-4082-B4BF-BB236400B6F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18FB8D94-9D71-49F7-8405-3DA82EB307C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18FB8D94-9D71-49F7-8405-3DA82EB307C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18FB8D94-9D71-49F7-8405-3DA82EB307C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18FB8D94-9D71-49F7-8405-3DA82EB307C8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -166,6 +172,7 @@ Global
 		{02B4EC8A-F2EF-4F52-A6B4-9F1FA20EFBA3} = {8A6DF526-9BAB-4475-A757-C9A03B4F67C6}
 		{8BB68412-E418-4D6C-8FA6-6E5547D97097} = {8A6DF526-9BAB-4475-A757-C9A03B4F67C6}
 		{3CB81FDC-324B-4082-B4BF-BB236400B6F3} = {8A6DF526-9BAB-4475-A757-C9A03B4F67C6}
+		{18FB8D94-9D71-49F7-8405-3DA82EB307C8} = {8A6DF526-9BAB-4475-A757-C9A03B4F67C6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E09808AB-58C3-422F-AB2A-1D10CC398705}
