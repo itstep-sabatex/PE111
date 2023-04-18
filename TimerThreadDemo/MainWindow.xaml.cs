@@ -26,6 +26,7 @@ namespace TimerThreadDemo
         public MainWindow()
         {
             InitializeComponent();
+            "sdds".Split("")
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
