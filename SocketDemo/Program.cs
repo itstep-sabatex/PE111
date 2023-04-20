@@ -36,6 +36,8 @@ Task.Run(() =>
             }
             Console.WriteLine("Text received: {0}", data);
         }
+    
+    
     }
     catch (Exception ex)
     {
@@ -53,6 +55,7 @@ Task.Run(() =>
     byte[] bytes = new byte[1024];
     IPAddress ip = new IPAddress(new byte[] { 127, 0, 0, 1 });
     IPEndPoint localEndPoint = new IPEndPoint(ip, 10000);
+
     Socket listner = new Socket(localEndPoint.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
     try
     {
@@ -67,6 +70,9 @@ Task.Run(() =>
     catch(Exception ex) 
     { 
     }
+
+
+
 });
 
 Console.ReadLine();
