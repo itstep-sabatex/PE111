@@ -1,4 +1,5 @@
 ﻿using System.Net.Http.Json;
+using System.Text.Json;
 
 namespace ExchangeDemo
 {
@@ -44,7 +45,13 @@ namespace ExchangeDemo
                         }
                     }
 
-                    var resul = await httpClient.GetFromJsonAsync<object[]>("api/v0/objects");
+                    var resul = await httpClient.GetFromJsonAsync<ObjectExchange[]>("api/v0/objects");
+                    if (resul == null) return;
+                    foreach (var item in resul)
+                    {
+                        await httpClient.DeleteAsync($"api/v0/objects/{item.Id}");
+                    }
+                    
 
                 }
 
