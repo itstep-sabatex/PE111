@@ -1,20 +1,25 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using WebApplicationMVCDemo.Data;
 using WebApplicationMVCDemo.Models;
+using WebApplicationMVCDemo.Sevices;
 
 namespace WebApplicationMVCDemo.Controllers
 {
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly ApplicationDbContext _dbContext;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger,ApplicationDbContext dbContext, DataServicecs dataServicecs)
         {
             _logger = logger;
+            _dbContext = dbContext;
         }
 
         public IActionResult Index()
         {
+            _logger.LogInformation("vdsjvcjds");
             return View();
         }
 

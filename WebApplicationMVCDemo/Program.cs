@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using WebApplicationMVCDemo.Data;
+using WebApplicationMVCDemo.Sevices;
 
 namespace WebApplicationMVCDemo
 {
@@ -19,6 +20,11 @@ namespace WebApplicationMVCDemo
             builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             builder.Services.AddControllersWithViews();
+
+            builder.Services.AddSingleton<DataServicecs>(); // один на застосунок
+            builder.Services.AddScoped<DataServicecs>();
+            builder.Services.AddTransient<DataServicecs>(); 
+
 
             var app = builder.Build();
 
