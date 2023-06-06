@@ -74,19 +74,21 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExchangeDemo", "ExchangeDem
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ASP_NET_Core", "ASP_NET_Core", "{B99B0473-E9CD-45C0-84BB-E6D6277C68E2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplicationDemo", "WebApplicationDemo\WebApplicationDemo.csproj", "{B5E2A42F-3751-490E-BA0E-A391014D8F9F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplicationDemo", "WebApplicationDemo\WebApplicationDemo.csproj", "{B5E2A42F-3751-490E-BA0E-A391014D8F9F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplicationMVCDemo", "WebApplicationMVCDemo\WebApplicationMVCDemo.csproj", "{79E4D252-0EEA-48FA-9C08-5F72343DAFF3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplicationMVCDemo", "WebApplicationMVCDemo\WebApplicationMVCDemo.csproj", "{79E4D252-0EEA-48FA-9C08-5F72343DAFF3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplicationApiDemo", "WebApplicationApiDemo\WebApplicationApiDemo.csproj", "{1C758F04-521D-47B5-8AAF-9EE259D230D4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplicationApiDemo", "WebApplicationApiDemo\WebApplicationApiDemo.csproj", "{1C758F04-521D-47B5-8AAF-9EE259D230D4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorAppDemo", "BlazorAppDemo\BlazorAppDemo.csproj", "{0DFB07A1-3CA4-4358-A74F-E3DFA76DF70E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorAppDemo", "BlazorAppDemo\BlazorAppDemo.csproj", "{0DFB07A1-3CA4-4358-A74F-E3DFA76DF70E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorAppWASMDemo.Server", "BlazorAppWASMDemo\Server\BlazorAppWASMDemo.Server.csproj", "{7238435C-5453-4D87-9D50-08ED5FEE5746}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorAppWASMDemo.Server", "BlazorAppWASMDemo\Server\BlazorAppWASMDemo.Server.csproj", "{7238435C-5453-4D87-9D50-08ED5FEE5746}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorAppWASMDemo.Client", "BlazorAppWASMDemo\Client\BlazorAppWASMDemo.Client.csproj", "{D07EC8EC-46D2-4AE4-8FC4-19563DDE65F3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorAppWASMDemo.Client", "BlazorAppWASMDemo\Client\BlazorAppWASMDemo.Client.csproj", "{D07EC8EC-46D2-4AE4-8FC4-19563DDE65F3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorAppWASMDemo.Shared", "BlazorAppWASMDemo\Shared\BlazorAppWASMDemo.Shared.csproj", "{5E726ABC-97D1-44B8-9F32-5566235E8BC8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorAppWASMDemo.Shared", "BlazorAppWASMDemo\Shared\BlazorAppWASMDemo.Shared.csproj", "{5E726ABC-97D1-44B8-9F32-5566235E8BC8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfAppApiDemo", "WpfAppApiDemo\WpfAppApiDemo.csproj", "{70919FC0-3B75-48ED-B53D-87E2980C4A4B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -234,6 +236,10 @@ Global
 		{5E726ABC-97D1-44B8-9F32-5566235E8BC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5E726ABC-97D1-44B8-9F32-5566235E8BC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5E726ABC-97D1-44B8-9F32-5566235E8BC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70919FC0-3B75-48ED-B53D-87E2980C4A4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70919FC0-3B75-48ED-B53D-87E2980C4A4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70919FC0-3B75-48ED-B53D-87E2980C4A4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70919FC0-3B75-48ED-B53D-87E2980C4A4B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -275,6 +281,7 @@ Global
 		{7238435C-5453-4D87-9D50-08ED5FEE5746} = {B99B0473-E9CD-45C0-84BB-E6D6277C68E2}
 		{D07EC8EC-46D2-4AE4-8FC4-19563DDE65F3} = {B99B0473-E9CD-45C0-84BB-E6D6277C68E2}
 		{5E726ABC-97D1-44B8-9F32-5566235E8BC8} = {B99B0473-E9CD-45C0-84BB-E6D6277C68E2}
+		{70919FC0-3B75-48ED-B53D-87E2980C4A4B} = {B99B0473-E9CD-45C0-84BB-E6D6277C68E2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E09808AB-58C3-422F-AB2A-1D10CC398705}
