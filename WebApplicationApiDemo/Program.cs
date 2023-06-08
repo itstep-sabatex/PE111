@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using WebApplicationApiDemo.Data;
+using WebApplicationApiDemo.Services;
 
 namespace WebApplicationApiDemo
 {
@@ -8,7 +9,7 @@ namespace WebApplicationApiDemo
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
-
+            builder.Services.AddSingleton<DateService>();
 
             // Add services to the container.
             // initialize db context (not fizicaly)

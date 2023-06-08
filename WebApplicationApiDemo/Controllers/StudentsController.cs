@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using WebApplicationApiDemo.Data;
 using WebApplicationApiDemo.Models;
+using WebApplicationApiDemo.Services;
 
 namespace WebApplicationApiDemo.Controllers
 {
@@ -16,7 +17,7 @@ namespace WebApplicationApiDemo.Controllers
     {
         private readonly ApplicationDbContext _context;
 
-        public StudentsController(ApplicationDbContext context)
+        public StudentsController(ApplicationDbContext context,DateService dateService)
         {
             _context = context;
         }
@@ -32,7 +33,7 @@ namespace WebApplicationApiDemo.Controllers
             return await _context.Students.ToListAsync();
         }
 
-        // GET: api/Students/5
+        // GET: api/Students/5  api/Students/update
         [HttpGet("{id}")]
         public async Task<ActionResult<Student>> GetStudent(int id)
         {

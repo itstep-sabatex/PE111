@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using WebApplicationApiDemo.Services;
 
 namespace WebApplicationApiDemo.Controllers
 {
@@ -13,10 +14,17 @@ namespace WebApplicationApiDemo.Controllers
     };
 
         private readonly ILogger<WeatherForecastController> _logger;
+        private readonly DateService _dateService;
 
-        public WeatherForecastController(ILogger<WeatherForecastController> logger)
+        public WeatherForecastController(ILogger<WeatherForecastController> logger,DateService dateService)
         {
             _logger = logger;
+            _dateService = dateService;
+        }
+        [HttpGet("CreatedDate")]
+        public DateTime GetDataServiceCrete()
+        {
+            return _dateService.CreateDate;
         }
 
         //[HttpGet(Name = "GetWeatherForecast")]
