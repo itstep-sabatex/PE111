@@ -9,7 +9,7 @@ namespace WebApplicationApiDemo
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
-            builder.Services.AddScoped<DateService>();
+            builder.Services.AddTransient<DateService>();
 
             // Add services to the container.
             // initialize db context (not fizicaly)
