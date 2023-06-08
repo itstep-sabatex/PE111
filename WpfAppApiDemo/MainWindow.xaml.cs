@@ -29,6 +29,8 @@ namespace WpfAppApiDemo
             InitializeComponent();
             httpClient = new HttpClient();
             httpClient.BaseAddress = new Uri("https://localhost:7274");
+            httpClient.DefaultRequestHeaders.Add("username", "dgshd");
+            httpClient.DefaultRequestHeaders.Add("password", "*********");
         }
 
         private void UpdateGrid()

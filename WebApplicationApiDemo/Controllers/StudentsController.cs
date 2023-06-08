@@ -26,6 +26,8 @@ namespace WebApplicationApiDemo.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Student>>> GetStudents()
         {
+
+          string username = Request.Headers["username"];
           if (_context.Students == null)
           {
               return NotFound();
