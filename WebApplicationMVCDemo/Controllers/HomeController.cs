@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System.Diagnostics;
 using WebApplicationMVCDemo.Data;
 using WebApplicationMVCDemo.Models;
@@ -17,10 +18,10 @@ namespace WebApplicationMVCDemo.Controllers
             _dbContext = dbContext;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            _logger.LogInformation("vdsjvcjds");
-            return View();
+            var data = await _dbContext.Students.ToArrayAsync(); 
+            return View(new IndexViewModel { Students = data });
         }
 
         public IActionResult Privacy()

@@ -50,7 +50,7 @@ namespace WebApplicationMVCDemo
 
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Home}/{action=Index}/{id?}");
+                pattern: "{controller=Home}/{action=Index}/{id?}"); // Home/Index  MyRR - MyRR/Index error- /Index
             app.MapRazorPages();
 
             app.Run();
