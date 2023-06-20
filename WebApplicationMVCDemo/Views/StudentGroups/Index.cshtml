@@ -9,7 +9,7 @@
 <p>
     <a asp-action="Create">Create New</a>
 </p>
-@using (Html.BeginForm("Index","StudentGroups",FormMethod.Get))
+@*@using (Html.BeginForm("Index","StudentGroups",FormMethod.Get))
 {
 
     <p>
@@ -23,6 +23,21 @@
         }
         Напрямок пошуку: @Html.DropDownList("searchDirection",sl))
         Назва: @Html.TextBox("SearchName") <input type="submit" value="Фільтрувати"/></p>
+}*@
+
+@using (Html.BeginForm("Index", "StudentGroups", FormMethod.Get))
+{
+    <p>
+        @{
+            var sl = new List<SelectListItem>();
+            sl.Add(new SelectListItem { Text = "StartWith" });
+            sl.Add(new SelectListItem { Text = "EndWith" });
+            sl.Add(new SelectListItem { Text = "Contains" });
+
+        }
+        Напрямок пошуку: @Html.DropDownList("searchDirection",sl))
+        Назва: @Html.TextBox("SearchName") <input type="submit" value="Фільтрувати"/>
+    </p>   
 }
 
 <table class="table">
