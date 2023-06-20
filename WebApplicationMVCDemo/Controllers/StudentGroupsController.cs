@@ -20,30 +20,35 @@ namespace WebApplicationMVCDemo.Controllers
         }
 
         // GET: StudentGroups
-        public async Task<IActionResult> Index(string searchName,string searchDirection)
+        //public async Task<IActionResult> Index(string searchName,string searchDirection)
+        //{
+        //    if (_context.StudentGroup == null)
+        //        return Problem("Entity set 'ApplicationDbContext.StudentGroup'  is null.");
+        //    var result = _context.StudentGroup.AsQueryable();
+        //    if (!string.IsNullOrEmpty(searchName))
+        //    {
+        //        switch (searchDirection)
+        //        {
+        //            case "Contains":
+        //                result = result.Where(s => s.Name.Contains(searchName));
+        //                break;
+        //            case "StartWith":
+        //                result = result.Where(s => s.Name.StartsWith(searchName));
+        //                break;
+        //            case "EndWith":
+        //                result = result.Where(s => s.Name.EndsWith(searchName));
+        //                break;
+
+        //        }
+        //    }
+        //    return  View(await result.ToListAsync());
+        //}
+        public async Task<IActionResult> Index()
         {
-            if (_context.StudentGroup == null)
-                return Problem("Entity set 'ApplicationDbContext.StudentGroup'  is null.");
-            var result = _context.StudentGroup.AsQueryable();
-            if (!string.IsNullOrEmpty(searchName))
-            {
-                switch (searchDirection)
-                {
-                    case "Contains":
-                        result = result.Where(s => s.Name.Contains(searchName));
-                        break;
-                    case "StartWith":
-                        result = result.Where(s => s.Name.StartsWith(searchName));
-                        break;
-                    case "EndWith":
-                        result = result.Where(s => s.Name.EndsWith(searchName));
-                        break;
+             if (_context.StudentGroup == null)
+                    return Problem("Entity set 'ApplicationDbContext.StudentGroup'  is null.");
 
-                }
-            }
-            return  View(await result.ToListAsync());
         }
-
         // GET: StudentGroups/Details/5
         public async Task<IActionResult> Details(int? id,string searchName,string searchSurname,bool caseInsensetiv,string direction)
         {
