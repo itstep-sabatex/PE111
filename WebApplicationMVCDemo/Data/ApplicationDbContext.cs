@@ -7,6 +7,7 @@ namespace WebApplicationMVCDemo.Data
     public class ApplicationDbContext : IdentityDbContext
     {
         public DbSet<Student> Students { get; set; }
+        public DbSet<StudentGroup>? StudentGroup { get; set; }
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
         {
