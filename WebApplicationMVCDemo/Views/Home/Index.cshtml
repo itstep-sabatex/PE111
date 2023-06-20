@@ -9,20 +9,3 @@
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
 
-<table class="table">
-    <thead>
-        <tr>
-            <th>@Html.DisplayNameFor(model=>model.Students[0].Name)</th>
-            <th>@Html.DisplayNameFor(model=>model.Students[0].Surname)</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model.Students)
-        {
-            <tr>
-                <td>@Html.DisplayFor(modeItem=>item.Name)</td>
-                <td>@Html.DisplayFor(modeItem=>item.Surname)</td>
-            </tr>
-        }
-    </tbody>
-</table>
