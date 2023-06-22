@@ -11,10 +11,17 @@ namespace WebApplicationDemo.Pages
         {
             _logger = logger;
         }
-
-        public void OnGet()
+        [BindProperty(SupportsGet =true)]
+        public string Student { get; set; }
+        public async Task OnGetAsync()
         {
+            //Student = "Petrenco Ivan";
+        }
 
+        public void OnPostSave() { }
+
+        public void OnPost()
+        {
         }
     }
 }
