@@ -33,10 +33,7 @@
                 <input asp-for="Student.Birthday" class="form-control" />
                 <span asp-validation-for="Student.Birthday" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="Student.StudentGroupId" class="control-label"></label>
-                <select asp-for="Student.StudentGroupId" class ="form-control" asp-items="ViewBag.StudentGroupId"></select>
-            </div>
+            <input hidden asp-for="Student.StudentGroupId"/>
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
             </div>

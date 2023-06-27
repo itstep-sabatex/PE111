@@ -19,7 +19,12 @@ namespace WebApplicationDemo.Pages.StudentGroups
             _context = context;
         }
 
-      public StudentGroup StudentGroup { get; set; } = default!; 
+        public StudentGroup StudentGroup { get; set; } = default!;
+        public IList<Student> Student { get; set; } = default!;
+        [BindProperty]
+        public string SearchName { get; set; }
+        [BindProperty]
+        public string SearchDirection { get; set; }
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
@@ -37,7 +42,54 @@ namespace WebApplicationDemo.Pages.StudentGroups
             {
                 StudentGroup = studentgroup;
             }
+
+            if (_context.Students != null)
+            {
+                Student = await _context.Students
+                .Where(s=>StudentGroup.Id == s.StudentGroupId).ToListAsync();
+            }
+
             return Page();
         }
+
+        public async Task<IActionResult> OnPostFilterAsync(int? id)
+        {
+            if (id == null || _context.StudentGroup == null)
+            {
+                return NotFound();
+            }
+
+            var studentgroup = await _context.StudentGroup.FirstOrDefaultAsync(m => m.Id == id);
+            if (studentgroup == null)
+            {
+                return NotFound();
+            }
+            else
+            {
+                StudentGroup = studentgroup;
+            }
+
+            var result = _context.Students.Where(w=>w.StudentGroupId==StudentGroup.Id);
+            if (!string.IsNullOrEmpty(SearchName))
+            {
+                switch (SearchDirection)
+                {
+                    case "Contains":
+                        result = result.Where(s => s.Name.Contains(SearchName) || s.Surname.Contains(SearchName));
+                        break;
+                    case "StartWith":
+                        result = result.Where(s => s.Name.StartsWith(SearchName) || s.Surname.StartsWith(SearchName));
+                        break;
+                    case "EndWith":
+                        result = result.Where(s => s.Name.EndsWith(SearchName) || s.Surname.EndsWith(SearchName));
+                        break;
+
+                }
+            }
+            Student = await result.ToListAsync();
+            return Page();
+        }
+
+
     }
 }

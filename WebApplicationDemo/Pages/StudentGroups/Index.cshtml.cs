@@ -20,30 +20,35 @@ namespace WebApplicationDemo.Pages.StudentGroups
         }
 
         public IList<StudentGroup> StudentGroup { get;set; } = default!;
-
+        [BindProperty]
+        public string SearchName { get; set; }
+        [BindProperty]
+        public string SearchDirection { get; set; }
+        [BindProperty]
+        public int Page { get; set; }
         public async Task OnGetAsync()
         {
             if (_context.StudentGroup != null)
             {
-                StudentGroup = await _context.StudentGroup.ToListAsync();
+                StudentGroup = await _context.StudentGroup.Skip(Page*5).Take(5).ToListAsync();
             }
         }
 
-        public async Task OnPostFilterAsync(string searchName,string searchDirection)
+        public async Task OnPostFilterAsync()
         {
             var result = _context.StudentGroup.AsQueryable();
-            if (!string.IsNullOrEmpty(searchName))
+            if (!string.IsNullOrEmpty(SearchName))
             {
-                switch (searchDirection)
+                switch (SearchDirection)
                 {
                     case "Contains":
-                        result = result.Where(s => s.Name.Contains(searchName));
+                        result = result.Where(s => s.Name.Contains(SearchName));
                         break;
                     case "StartWith":
-                        result = result.Where(s => s.Name.StartsWith(searchName));
+                        result = result.Where(s => s.Name.StartsWith(SearchName));
                         break;
                     case "EndWith":
-                        result = result.Where(s => s.Name.EndsWith(searchName));
+                        result = result.Where(s => s.Name.EndsWith(SearchName));
                         break;
 
                 }

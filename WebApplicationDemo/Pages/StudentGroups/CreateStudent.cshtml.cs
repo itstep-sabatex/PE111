@@ -19,9 +19,9 @@ namespace WebApplicationDemo.Pages.StudentGroups
             _context = context;
         }
 
-        public IActionResult OnGet()
+        public IActionResult OnGet(int studentGroupId)
         {
-            ViewData["StudentGroupId"] = new SelectList(_context.StudentGroup, "Id", "Id");
+            Student = new Student { StudentGroupId=studentGroupId,Birthday=DateTime.Now };
             return Page();
         }
 
@@ -40,7 +40,7 @@ namespace WebApplicationDemo.Pages.StudentGroups
             _context.Students.Add(Student);
             await _context.SaveChangesAsync();
 
-            return RedirectToPage("./Index");
+            return RedirectToPage("./Details",new {id=Student.StudentGroupId });
         }
     }
 }
