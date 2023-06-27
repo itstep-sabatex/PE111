@@ -28,5 +28,29 @@ namespace WebApplicationDemo.Pages.StudentGroups
                 StudentGroup = await _context.StudentGroup.ToListAsync();
             }
         }
+
+        public async Task OnPostFilterAsync(string searchName,string searchDirection)
+        {
+            var result = _context.StudentGroup.AsQueryable();
+            if (!string.IsNullOrEmpty(searchName))
+            {
+                switch (searchDirection)
+                {
+                    case "Contains":
+                        result = result.Where(s => s.Name.Contains(searchName));
+                        break;
+                    case "StartWith":
+                        result = result.Where(s => s.Name.StartsWith(searchName));
+                        break;
+                    case "EndWith":
+                        result = result.Where(s => s.Name.EndsWith(searchName));
+                        break;
+
+                }
+            }
+            StudentGroup = await result.ToListAsync();
+        }
     }
+
+
 }
