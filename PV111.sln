@@ -72,23 +72,23 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HTTPClientDemo", "HTTPClien
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExchangeDemo", "ExchangeDemo\ExchangeDemo.csproj", "{7D646664-F1C7-4ECB-A969-7FBDFA3FDE86}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ASP_NET_Core", "ASP_NET_Core", "{B99B0473-E9CD-45C0-84BB-E6D6277C68E2}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ASP.NET", "ASP.NET", "{B99B0473-E9CD-45C0-84BB-E6D6277C68E2}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplicationMVCDemo", "WebApplicationMVCDemo\WebApplicationMVCDemo.csproj", "{79E4D252-0EEA-48FA-9C08-5F72343DAFF3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplicationMVCDemo", "ASP.NET\WebApplicationMVCDemo\WebApplicationMVCDemo.csproj", "{79E4D252-0EEA-48FA-9C08-5F72343DAFF3}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplicationApiDemo", "WebApplicationApiDemo\WebApplicationApiDemo.csproj", "{1C758F04-521D-47B5-8AAF-9EE259D230D4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplicationApiDemo", "ASP.NET\WebApplicationApiDemo\WebApplicationApiDemo.csproj", "{1C758F04-521D-47B5-8AAF-9EE259D230D4}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorAppDemo", "BlazorAppDemo\BlazorAppDemo.csproj", "{0DFB07A1-3CA4-4358-A74F-E3DFA76DF70E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorAppDemo", "ASP.NET\BlazorAppDemo\BlazorAppDemo.csproj", "{0DFB07A1-3CA4-4358-A74F-E3DFA76DF70E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorAppWASMDemo.Server", "BlazorAppWASMDemo\Server\BlazorAppWASMDemo.Server.csproj", "{7238435C-5453-4D87-9D50-08ED5FEE5746}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorAppWASMDemo.Server", "ASP.NET\BlazorAppWASMDemo\Server\BlazorAppWASMDemo.Server.csproj", "{7238435C-5453-4D87-9D50-08ED5FEE5746}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorAppWASMDemo.Client", "BlazorAppWASMDemo\Client\BlazorAppWASMDemo.Client.csproj", "{D07EC8EC-46D2-4AE4-8FC4-19563DDE65F3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorAppWASMDemo.Client", "ASP.NET\BlazorAppWASMDemo\Client\BlazorAppWASMDemo.Client.csproj", "{D07EC8EC-46D2-4AE4-8FC4-19563DDE65F3}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorAppWASMDemo.Shared", "BlazorAppWASMDemo\Shared\BlazorAppWASMDemo.Shared.csproj", "{5E726ABC-97D1-44B8-9F32-5566235E8BC8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorAppWASMDemo.Shared", "ASP.NET\BlazorAppWASMDemo\Shared\BlazorAppWASMDemo.Shared.csproj", "{5E726ABC-97D1-44B8-9F32-5566235E8BC8}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfAppApiDemo", "WpfAppApiDemo\WpfAppApiDemo.csproj", "{70919FC0-3B75-48ED-B53D-87E2980C4A4B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfAppApiDemo", "ASP.NET\WpfAppApiDemo\WpfAppApiDemo.csproj", "{70919FC0-3B75-48ED-B53D-87E2980C4A4B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplicationDemo", "WebApplicationDemo\WebApplicationDemo.csproj", "{099E3643-AE83-4BF0-B792-EAB62FF2E9EE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplicationDemo", "ASP.NET\WebApplicationDemo\WebApplicationDemo.csproj", "{099E3643-AE83-4BF0-B792-EAB62FF2E9EE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
