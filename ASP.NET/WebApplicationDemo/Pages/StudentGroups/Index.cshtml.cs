@@ -55,6 +55,24 @@ namespace WebApplicationDemo.Pages.StudentGroups
             }
             StudentGroup = await result.ToListAsync();
         }
+
+        public async Task<IActionResult> OnPostDeleteAsync(int? id)
+        {
+            if (id == null || _context.StudentGroup == null)
+            {
+                return NotFound();
+            }
+            var studentgroup = await _context.StudentGroup.FindAsync(id);
+
+            if (studentgroup != null)
+            {
+                 _context.StudentGroup.Remove(studentgroup);
+                await _context.SaveChangesAsync();
+            }
+            StudentGroup = await _context.StudentGroup.Skip(Page * 5).Take(5).ToListAsync();
+            return Page();
+        }
+
     }
 
 
