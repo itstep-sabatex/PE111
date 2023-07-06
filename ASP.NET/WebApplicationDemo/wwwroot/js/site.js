@@ -66,4 +66,24 @@ function RefreshStudentTable(tbId) {
       
     }
     xhr.send();
+
+
+    var rs = $.getJSON('/api/studentgroups', (data) => {
+
+        tb.innerHTML = null;
+        for (let i = 0; i < data.length; i++) {
+            tr = document.createElement("tr");
+            tb.appendChild(tr);
+            tdName = document.createElement("td");
+            tr.appendChild(tdName);
+            let id = "id" + data[i].id;
+            tr.id = id;
+            tr.onclick = () => rowClick(id);
+            tdName.innerHTML = data[i].name;
+            tr.appendChild(document.createElement("td"));
+        }
+
+
+    });
+
 }
