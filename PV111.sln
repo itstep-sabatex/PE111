@@ -88,7 +88,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorAppWASMDemo.Shared", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfAppApiDemo", "ASP.NET\WpfAppApiDemo\WpfAppApiDemo.csproj", "{70919FC0-3B75-48ED-B53D-87E2980C4A4B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplicationDemo", "ASP.NET\WebApplicationDemo\WebApplicationDemo.csproj", "{099E3643-AE83-4BF0-B792-EAB62FF2E9EE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplicationDemo", "ASP.NET\WebApplicationDemo\WebApplicationDemo.csproj", "{099E3643-AE83-4BF0-B792-EAB62FF2E9EE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -57,7 +57,7 @@ namespace WebApplicationDemo.Pages.StudentGroups
                 await _context.SaveChangesAsync();
             }
 
-            return RedirectToPage("./Index");
+            return RedirectToPage("./Details",new {id=Student.StudentGroupId });
         }
     }
 }

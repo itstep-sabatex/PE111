@@ -19,6 +19,7 @@ namespace WebApplicationDemo
             builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             builder.Services.AddRazorPages();
+            builder.Services.AddControllers();
 
             var app = builder.Build();
 
@@ -43,7 +44,7 @@ namespace WebApplicationDemo
             app.UseAuthorization();
 
             app.MapRazorPages();
-
+            app.MapControllers();
             app.Use(async (context, next) =>
             {
                 // Do work that can write to the Response.

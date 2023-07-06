@@ -1,0 +1,17 @@
+﻿@page
+@model WebApplicationDemo.Pages.AjaxDemoModel
+@{
+}
+<button   class="btn btn-primary" onclick="RefreshStudentTable('studentGroupTbody')">Get Students Group</button>
+<button class="btn btn-primary" onclick="deleteItem('studentGroupTbody')">Delete</button>
+<table class="table table-color">
+    <thead>
+        <tr>
+            <th>Назва групи</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody id="studentGroupTbody">
+
+    </tbody>
+</table>
