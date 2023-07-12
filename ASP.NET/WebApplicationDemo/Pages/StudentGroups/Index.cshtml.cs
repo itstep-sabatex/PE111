@@ -1,7 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
@@ -10,13 +13,17 @@ using WebApplicationDemo.Models;
 
 namespace WebApplicationDemo.Pages.StudentGroups
 {
+    [Authorize(Roles = "Administrator")]
     public class IndexModel : PageModel
     {
         private readonly WebApplicationDemo.Data.ApplicationDbContext _context;
+        private readonly UserManager<IdentityUser> _userManager;
 
-        public IndexModel(WebApplicationDemo.Data.ApplicationDbContext context)
+
+        public IndexModel(WebApplicationDemo.Data.ApplicationDbContext context, UserManager<IdentityUser> userManager)
         {
             _context = context;
+            _userManager = userManager; 
         }
 
         public IList<StudentGroup> StudentGroup { get;set; } = default!;
@@ -28,6 +35,7 @@ namespace WebApplicationDemo.Pages.StudentGroups
         public int Page { get; set; }
         public async Task OnGetAsync()
         {
+
             if (_context.StudentGroup != null)
             {
                 StudentGroup = await _context.StudentGroup.Skip(Page*5).Take(5).ToListAsync();
@@ -63,6 +71,12 @@ namespace WebApplicationDemo.Pages.StudentGroups
                 return NotFound();
             }
             var studentgroup = await _context.StudentGroup.FindAsync(id);
+
+            var user = await _userManager.GetUserAsync(User);
+            if (!await _userManager.IsInRoleAsync(user, "Adminisrator"))
+            {
+                return Unauthorized();
+            }
 
             if (studentgroup != null)
             {

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -23,6 +24,7 @@ namespace WebApplicationDemo.Controllers
 
         // GET: api/StudentGroups
         [HttpGet]
+        [Authorize]
         public async Task<ActionResult<IEnumerable<StudentGroup>>> GetStudentGroup()
         {
           if (_context.StudentGroup == null)
