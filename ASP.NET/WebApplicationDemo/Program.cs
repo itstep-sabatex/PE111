@@ -6,6 +6,8 @@ namespace WebApplicationDemo
 {
     public class Program
     {
+
+
         static async Task initialAutorized(IServiceProvider host)
         {
             using (var serviceScope =host.CreateScope())
@@ -94,7 +96,6 @@ namespace WebApplicationDemo
 
 
             await initialAutorized(app.Services);
-
             app.Run();
         }
     }

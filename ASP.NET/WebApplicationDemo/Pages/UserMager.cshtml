@@ -1,0 +1,39 @@
+﻿@page
+@model WebApplicationDemo.Pages.UserMagerModel
+@{
+}
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.IdentityUsers[0].UserName)
+            </th>
+            <th>
+                Roles
+            </th>
+
+           <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.IdentityUsers)
+        {
+            var a = Model.UserRoles[item.Id];
+
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.UserName)
+                </td>
+                <td>
+                    @a
+                </td>
+
+                 <td>
+                    <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
+                    <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
+                    <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
