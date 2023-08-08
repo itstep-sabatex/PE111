@@ -16,10 +16,10 @@ namespace WebApplicationDemo
                 var RoleManager = services.GetRequiredService<RoleManager<IdentityRole>>();
                 var UserManager = services.GetRequiredService<UserManager<IdentityUser>>();
                 var  _userStore = services.GetRequiredService<IUserStore<IdentityUser>>();
-                var  _emailStore = services.GetRequiredService<IUserEmailStore<IdentityUser>>();
+                var  _emailStore = (IUserEmailStore<IdentityUser>)_userStore;
                 var adminRole = await RoleManager.FindByNameAsync("Administrator");
                 const string adminUser = "www@were.ty";
-                const string adminPass = "12345";
+                const string adminPass = "aq1SW2de3fr4-";
                 if (adminRole == null)
                 {
                     var adminR = await RoleManager.CreateAsync(new IdentityRole("Administrator"));
