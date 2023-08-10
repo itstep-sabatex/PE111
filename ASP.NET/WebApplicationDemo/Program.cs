@@ -70,7 +70,8 @@ namespace WebApplicationDemo
             builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddRoles<IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>();
-            builder.Services.AddRazorPages();
+            builder.Services.AddLocalization();
+            builder.Services.AddRazorPages().AddDataAnnotationsLocalization().AddViewLocalization();
             builder.Services.AddControllers();
 
             var app = builder.Build();

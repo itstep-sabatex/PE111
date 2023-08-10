@@ -1,13 +1,14 @@
 ﻿@page
 @model IndexModel
+@inject IViewLocalizer Localizer
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = Localizer["Home page"];
 }
 
 <div class="text-center">
     
-    <h1 class="display-4">Welcome</h1>
+    <h1 class="display-4">@Localizer["Welcome"]"</h1>
     <a asp-page="/Index" asp-page-handler="Save"></a>
     <h2>@Model.Student</h2>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <p>@Localizer["Learn about building Web apps with ASP.NET Core."]</p>
 </div>
