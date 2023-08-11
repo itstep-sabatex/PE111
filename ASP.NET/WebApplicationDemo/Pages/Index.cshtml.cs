@@ -15,8 +15,8 @@ namespace WebApplicationDemo.Pages
         public string Student { get; set; }
         public async Task OnGetAsync()
         {
-            var a = 10;
-            //Student = "Petrenco Ivan";
+            Student = "Petrenco Ivan";
+            await Task.Yield();
         }
 
         public void OnPostSave() { }
