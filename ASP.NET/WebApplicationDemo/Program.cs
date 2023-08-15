@@ -13,13 +13,13 @@ namespace WebApplicationDemo
 
         static async Task initialAutorized(IServiceProvider host)
         {
-            using (var serviceScope =host.CreateScope())
+            using (var serviceScope = host.CreateScope())
             {
                 var services = serviceScope.ServiceProvider;
                 var RoleManager = services.GetRequiredService<RoleManager<IdentityRole>>();
                 var UserManager = services.GetRequiredService<UserManager<IdentityUser>>();
-                var  _userStore = services.GetRequiredService<IUserStore<IdentityUser>>();
-                var  _emailStore = (IUserEmailStore<IdentityUser>)_userStore;
+                var _userStore = services.GetRequiredService<IUserStore<IdentityUser>>();
+                var _emailStore = (IUserEmailStore<IdentityUser>)_userStore;
                 var adminRole = await RoleManager.FindByNameAsync("Administrator");
                 const string adminUser = "www@were.ty";
                 const string adminPass = "aq1SW2de3fr4-";
@@ -38,7 +38,7 @@ namespace WebApplicationDemo
                     var result = await UserManager.CreateAsync(user, adminPass);
                     if (result.Succeeded)
                     {
-                    
+
                         var userId = await UserManager.GetUserIdAsync(user);
                         var code = await UserManager.GenerateEmailConfirmationTokenAsync(user);
                         var resultConfirm = await UserManager.ConfirmEmailAsync(user, code);
@@ -73,7 +73,7 @@ namespace WebApplicationDemo
             builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddRoles<IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>();
-            builder.Services.AddLocalization(options=>options.ResourcesPath="Resources");
+            builder.Services.AddLocalization(options => options.ResourcesPath = "Resources");
             builder.Services.AddRazorPages().AddDataAnnotationsLocalization().AddViewLocalization();
             builder.Services.AddControllers();
 
@@ -83,18 +83,18 @@ namespace WebApplicationDemo
     var supportedCultures = new[]
     {
         new CultureInfo("en-US"),
-        new CultureInfo("uk")
+        new CultureInfo("uk-UA")
     };
 
-        options.DefaultRequestCulture = new RequestCulture(culture: "en-US", uiCulture: "en-US");
-        options.SupportedCultures = supportedCultures;
+    options.DefaultRequestCulture = new RequestCulture(culture: "en-US", uiCulture: "en-US");
+    options.SupportedCultures = supportedCultures;
     options.SupportedUICultures = supportedCultures;
 
     options.AddInitialRequestCultureProvider(new CustomRequestCultureProvider(async context =>
     {
-            // My custom request culture logic
-            return await Task.FromResult(new ProviderCultureResult("en"));
-        }));
+        // My custom request culture logic
+        return await Task.FromResult(new ProviderCultureResult("en-US"));
+    }));
 });
 
             var app = builder.Build();
@@ -114,10 +114,18 @@ namespace WebApplicationDemo
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
+ 
             app.UseRouting();
 
             app.UseAuthentication();
             app.UseAuthorization();
+            
+            app.UseRequestLocalization(
+                new RequestLocalizationOptions() { ApplyCurrentCultureToResponseHeaders = true }
+               .AddSupportedCultures(new[] { "en-US", "uk-UA" })
+               .AddSupportedUICultures(new[] { "en-US", "uk-UA" })
+               .SetDefaultCulture("uk-UA")
+            );
 
             app.MapRazorPages();
             app.MapControllers();
