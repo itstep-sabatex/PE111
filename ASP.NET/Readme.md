@@ -19,6 +19,7 @@
 ### class work / homework 17.08.2023
 
 Взяти за основу WebApplicationDemo.
+
     1. Додати модель Client з полями:
         - Name (frendly name for search) обовязкове для заповнення;
         - FullName (Повне найменування для офіціальних документів) не обовязкове;
