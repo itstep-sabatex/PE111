@@ -8,27 +8,27 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		Readme.md = Readme.md
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinFormsADODemo", "WinFormsADODemo\WinFormsADODemo.csproj", "{22503D04-60A7-49C8-A330-E64782D5D8AF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinFormsADODemo", "ADO.NET\WinFormsADODemo\WinFormsADODemo.csproj", "{22503D04-60A7-49C8-A330-E64782D5D8AF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsAdoNetDm", "WindowsFormsAdoNetDm\WindowsFormsAdoNetDm.csproj", "{6A9274B4-B178-4DED-957D-813B3DF76303}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsAdoNetDm", "ADO.NET\WindowsFormsAdoNetDm\WindowsFormsAdoNetDm.csproj", "{6A9274B4-B178-4DED-957D-813B3DF76303}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ADONET.Models", "ADONET.Models\ADONET.Models.csproj", "{E4970CFF-27AE-4D14-841E-7AE02635ED16}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ADONET.Models", "ADO.NET\ADONET.Models\ADONET.Models.csproj", "{E4970CFF-27AE-4D14-841E-7AE02635ED16}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ADONETWPFEF", "ADONETWPFEF\ADONETWPFEF.csproj", "{D658C5B9-8248-4D03-8010-44504CEBA081}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ADONETWPFEF", "ADO.NET\ADONETWPFEF\ADONETWPFEF.csproj", "{D658C5B9-8248-4D03-8010-44504CEBA081}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EFCore", "EFCore", "{CE687BDE-0E6C-49B3-9080-AF9C56E944F0}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EFCoreDemo", "EFCoreDemo\EFCoreDemo.csproj", "{69F36FD4-FFEB-4B94-8A90-5538F663CB6F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EFCoreDemo", "ADO.NET\EFCoreDemo\EFCoreDemo.csproj", "{69F36FD4-FFEB-4B94-8A90-5538F663CB6F}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ADONet", "ADO.NET\ADONet\ADONet.csproj", "{EF6C3AEC-3229-4791-8233-AF6204740B2A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EFCoreDemoBaseExist", "EFCoreDemoBaseExist\EFCoreDemoBaseExist.csproj", "{33E3F107-43AA-4D40-B7E7-0764345EC6C3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EFCoreDemoBaseExist", "ADO.NET\EFCoreDemoBaseExist\EFCoreDemoBaseExist.csproj", "{33E3F107-43AA-4D40-B7E7-0764345EC6C3}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EFCoreDemo.Models", "EFCoreDemo.Models\EFCoreDemo.Models.csproj", "{805DFE57-D099-4C44-B80B-7C31BB9117BC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EFCoreDemo.Models", "ADO.NET\EFCoreDemo.Models\EFCoreDemo.Models.csproj", "{805DFE57-D099-4C44-B80B-7C31BB9117BC}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ScoolJournal", "ScoolJournal\ScoolJournal.csproj", "{177F6547-A098-4534-9C90-EAA69FDF282D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ScoolJournal", "ADO.NET\ScoolJournal\ScoolJournal.csproj", "{177F6547-A098-4534-9C90-EAA69FDF282D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DapperDemo", "DapperDemo\DapperDemo.csproj", "{2BAD4E43-AAD1-4242-923B-C79A99F43E87}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DapperDemo", "ADO.NET\DapperDemo\DapperDemo.csproj", "{2BAD4E43-AAD1-4242-923B-C79A99F43E87}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ADO.NET", "ADO.NET", "{ED61CDC0-33F0-46C0-AA28-B3802DAB51E4}"
 EndProject
@@ -38,39 +38,39 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DLLImportDemo", "SystemProg
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProcessDemo", "SystemProg\ProcessDemo\ProcessDemo.csproj", "{D791CD1F-9C5B-438A-A68A-2E0E53ACB256}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Calc", "Calc\Calc.csproj", "{B1383AA1-565F-4725-9870-B40D95841D2E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Calc", "SystemProg\Calc\Calc.csproj", "{B1383AA1-565F-4725-9870-B40D95841D2E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinFormsApp1", "WinFormsApp1\WinFormsApp1.csproj", "{6C5A7D6C-AD96-4340-9EA9-593EE6A2211F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinFormsApp1", "ADO.NET\WinFormsApp1\WinFormsApp1.csproj", "{6C5A7D6C-AD96-4340-9EA9-593EE6A2211F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApp1", "WindowsFormsApp1\WindowsFormsApp1.csproj", "{CDE6B2E4-073B-4CC1-B475-74F33636DF86}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApp1", "ADO.NET\WindowsFormsApp1\WindowsFormsApp1.csproj", "{CDE6B2E4-073B-4CC1-B475-74F33636DF86}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ThreadDemo", "ThreadDemo\ThreadDemo.csproj", "{A5222115-1E02-44C2-AFA7-8C5285B1A1A8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ThreadDemo", "SystemProg\ThreadDemo\ThreadDemo.csproj", "{A5222115-1E02-44C2-AFA7-8C5285B1A1A8}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MonitorDemo", "MonitorDemo\MonitorDemo.csproj", "{5B4A4184-B658-4516-AC38-2409E6C486F3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MonitorDemo", "SystemProg\MonitorDemo\MonitorDemo.csproj", "{5B4A4184-B658-4516-AC38-2409E6C486F3}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MutexDemo", "MutexDemo\MutexDemo.csproj", "{02B4EC8A-F2EF-4F52-A6B4-9F1FA20EFBA3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MutexDemo", "SystemProg\MutexDemo\MutexDemo.csproj", "{02B4EC8A-F2EF-4F52-A6B4-9F1FA20EFBA3}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SemaphoreDemo", "SemaphoreDemo\SemaphoreDemo.csproj", "{8BB68412-E418-4D6C-8FA6-6E5547D97097}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SemaphoreDemo", "SystemProg\SemaphoreDemo\SemaphoreDemo.csproj", "{8BB68412-E418-4D6C-8FA6-6E5547D97097}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ThreadPoool", "ThreadPoool\ThreadPoool.csproj", "{3CB81FDC-324B-4082-B4BF-BB236400B6F3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ThreadPoool", "SystemProg\ThreadPoool\ThreadPoool.csproj", "{3CB81FDC-324B-4082-B4BF-BB236400B6F3}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TimerThreadDemo", "TimerThreadDemo\TimerThreadDemo.csproj", "{18FB8D94-9D71-49F7-8405-3DA82EB307C8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TimerThreadDemo", "SystemProg\TimerThreadDemo\TimerThreadDemo.csproj", "{18FB8D94-9D71-49F7-8405-3DA82EB307C8}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ParallelDemo", "ParallelDemo\ParallelDemo.csproj", "{6211B6CC-60A6-4D61-B07B-46560BAAA588}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ParallelDemo", "SystemProg\ParallelDemo\ParallelDemo.csproj", "{6211B6CC-60A6-4D61-B07B-46560BAAA588}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NET programming", "NET programming", "{2B127698-93F7-4DF6-ADCA-05694F514C37}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SocketDemo", "SocketDemo\SocketDemo.csproj", "{EB5DA05D-256B-42A8-BF28-A4FB3F8E2471}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SocketDemo", "NET programming\SocketDemo\SocketDemo.csproj", "{EB5DA05D-256B-42A8-BF28-A4FB3F8E2471}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TCPDemo", "TCPDemo\TCPDemo.csproj", "{A50ACB89-CDC4-4147-B220-3896EAA6C4A8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TCPDemo", "NET programming\TCPDemo\TCPDemo.csproj", "{A50ACB89-CDC4-4147-B220-3896EAA6C4A8}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UDPDemo", "UDPDemo\UDPDemo.csproj", "{57D7298A-5E0D-4B4B-BC7A-1B78F2A47085}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UDPDemo", "NET programming\UDPDemo\UDPDemo.csproj", "{57D7298A-5E0D-4B4B-BC7A-1B78F2A47085}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SMTPDemo", "SMTPDemo\SMTPDemo.csproj", "{4CFD0C71-63D5-4619-B2AA-9B31BDED5A69}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SMTPDemo", "NET programming\SMTPDemo\SMTPDemo.csproj", "{4CFD0C71-63D5-4619-B2AA-9B31BDED5A69}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HTTPClientDemo", "HTTPClientDemo\HTTPClientDemo.csproj", "{AC1C9C7C-5769-437F-B85F-6C0AF10D0D8E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HTTPClientDemo", "NET programming\HTTPClientDemo\HTTPClientDemo.csproj", "{AC1C9C7C-5769-437F-B85F-6C0AF10D0D8E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExchangeDemo", "ExchangeDemo\ExchangeDemo.csproj", "{7D646664-F1C7-4ECB-A969-7FBDFA3FDE86}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExchangeDemo", "NET programming\ExchangeDemo\ExchangeDemo.csproj", "{7D646664-F1C7-4ECB-A969-7FBDFA3FDE86}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ASP.NET", "ASP.NET", "{B99B0473-E9CD-45C0-84BB-E6D6277C68E2}"
 EndProject
@@ -90,7 +90,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfAppApiDemo", "ASP.NET\Wp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplicationDemo", "ASP.NET\WebApplicationDemo\WebApplicationDemo.csproj", "{099E3643-AE83-4BF0-B792-EAB62FF2E9EE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplicationIdentityCustomDemo", "WebApplicationIdentityCustomDemo\WebApplicationIdentityCustomDemo.csproj", "{30F40B90-F887-45C6-9385-4A09BCD0D025}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplicationIdentityCustomDemo", "ASP.NET\WebApplicationIdentityCustomDemo\WebApplicationIdentityCustomDemo.csproj", "{30F40B90-F887-45C6-9385-4A09BCD0D025}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
