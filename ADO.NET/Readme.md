@@ -6,7 +6,7 @@ FoxPro,Clipper - (DBF) database language
 Paradox - (Borland)
 Interbase - 
 
-Open Database Connectivity (ODBC) - стандарт для уніфікації доступу до баз даних (1970) 
+Open Database Connectivity (ODBC) - (1970) 
 
 DAO - data access object (Java, JDBC)
 
@@ -16,13 +16,13 @@ ADO.NET is sometimes considered an evolution of ActiveX Data Objects (ADO) techn
 
 
 
-System.Data.OleDb (доступ до MSSQL через OLE)
+System.Data.OleDb ( MSSQL  OLE)
 
 
 
 
 
-#IDbConnection - Відповідає за зєднання (сесія)
+#IDbConnection - Ві ()
     "PostgresConnection": "Server=172.19.0.2;Port=5432;DataBase=Demo;Uid=postgres;Pwd=mysecretpassword",
     "SqliteConnection": "FileName='C:\\DataBases\\Demo.db';Cache=Shared",
     "MSSQLConnection": "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=Demo"
@@ -31,15 +31,15 @@ System.Data.OleDb (доступ до MSSQL через OLE)
 	or
 	var connection = new Npgsql.NpgsqlConnection("Server=172.19.0.2;Port=5432;DataBase=Demo;Uid=postgres;Pwd=mysecretpassword")
 
-#IDbCommand - команда для виконання (з результатом, без)
+#IDbCommand - 
 	
 
 
-IDataReader, IDataRecord; - обробка команди з результатом
-IDataParameter, IDbDataParameter - параметри до команд
+IDataReader, IDataRecord; - 
+IDataParameter, IDbDataParameter - 
 
 
-IDbTransaction - транзакції. 
+IDbTransaction - . 
 
 IDataAdapter,IDbDataAdapter - Allows an object to implement a DataAdapter, and represents a set of methods and mapping action-related properties that are used to fill and update a DataSet and update a data source.
 
