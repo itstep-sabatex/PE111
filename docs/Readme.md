@@ -1,3 +1,3 @@
 # ITStep
 
-[`ASP.NET Core`](ASP.NET%20Core/Readme.md)
+[`ASP.NET Core`](ASP.NET%20Core/Readme)
