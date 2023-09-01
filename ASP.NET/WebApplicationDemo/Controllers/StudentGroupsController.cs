@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using WebApplicationDemo.Data;
@@ -27,10 +28,10 @@ namespace WebApplicationDemo.Controllers
         [Authorize]
         public async Task<ActionResult<IEnumerable<StudentGroup>>> GetStudentGroup()
         {
-          if (_context.StudentGroup == null)
-          {
+            if (_context.StudentGroup == null)
+            {
               return NotFound();
-          }
+            }
             return await _context.StudentGroup.ToListAsync();
         }
 
