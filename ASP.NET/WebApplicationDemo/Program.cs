@@ -137,8 +137,10 @@ namespace WebApplicationDemo
                 // Do logging or other work that doesn't write to the Response.
             });
 
-
-            await initialAutorized(app.Services);
+            if (app.Environment.IsDevelopment())
+            {
+                await initialAutorized(app.Services);
+            }
             app.Run();
         }
     }
